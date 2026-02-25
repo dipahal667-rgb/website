@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>Housing Project - 172 Plots</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: repeat(4, auto); /* ৪টি সারি */
+            grid-auto-flow: column; /* বাম থেকে ডানে যাবে */
+            gap: 15px; /* বাটনের মাঝে ফাঁকা */
+            justify-content: center;
+        }
+
+        .plot-btn {
+            width: 60px;
+            height: 45px;
+            border: none;
+            border-radius: 8px;
+            background: #3498db;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .plot-btn:hover {
+            background: #2c80b4;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Housing Project - 172 Plots</h1>
+
+    <div class="container" id="plotContainer"></div>
+
+    <script>
+        const container = document.getElementById("plotContainer");
+
+        for (let i = 1; i <= 172; i++) {
+            const button = document.createElement("button");
+            button.className = "plot-btn";
+            button.innerText = i;
+            container.appendChild(button);
+        }
+    </script>
+
+</body>
+</html>
