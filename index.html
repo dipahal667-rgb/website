@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Housing Project - 172 Plots</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
             margin: 0;
             padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
             text-align: center;
         }
 
         h1 {
             margin-bottom: 30px;
-            color: #333;
+            color: #2c3e50;
         }
 
         .container {
             display: grid;
-            grid-template-rows: repeat(4, auto); /* ৪টি সারি */
-            grid-auto-flow: column; /* বাম থেকে ডানে যাবে */
+            grid-template-rows: repeat(6, auto); /* ৬টি সারি */
+            grid-auto-flow: column; /* বাম থেকে ডানে */
             gap: 15px; /* বাটনের মাঝে ফাঁকা */
             justify-content: center;
         }
 
         .plot-btn {
-            width: 60px;
+            width: 65px;
             height: 45px;
             border: none;
             border-radius: 8px;
-            background: #3498db;
+            background-color: #3498db;
             color: white;
             font-size: 14px;
             cursor: pointer;
-            transition: 0.3s;
+            transition: 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
         }
 
         .plot-btn:hover {
-            background: #2c80b4;
-            transform: scale(1.1);
+            background-color: #2c80b4;
+            transform: scale(1.08);
         }
     </style>
 </head>
+
 <body>
 
     <h1>Housing Project - 172 Plots</h1>
